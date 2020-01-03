@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {RouterModule} from '@angular/router';
 import {APP_BASE_HREF} from '@angular/common';
-
+import { FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './navegacao/menu/menu.component';
@@ -22,9 +22,11 @@ import { DataBindingComponent } from './demos/data-binding/data-binding.componen
     SobreComponent,
     ContatoComponent,
     DataBindingComponent
+
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     [RouterModule.forRoot(rootRouterConfig,{useHash:false})]
   ],
   providers: [
